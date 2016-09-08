@@ -5,14 +5,27 @@
 	-webkit-font-smoothing: antialiased
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px
 	text-shadow: rgba(0,0,0,.01) 0 0 1px
+	//background: #000
+	//color: red
 
 .heading
 	padding-bottom: 20px
 	text-align: center
-	background-color: #FA4343
-
+	background: #FA4343
+	z-index: 3
 #sub
 	font-size: 17px
+
+.background
+	position: relative
+	height: 960px 
+	background:
+		image: url(../imgs/main-background.jpg)
+		size: contain
+		position: top center
+		attachment: fixed
+		repeat: no-repeat
+		color: #222
 
 .center-text
 	text-align: center
@@ -21,3 +34,4 @@
 	line-height: 30px
 	font-size: 20px
 .content-wrap
+	background: #ddd
