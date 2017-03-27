@@ -32,7 +32,6 @@ nav
 
         display: inline-block
 
-        background: #bbb
 
         > li
             float: left
@@ -45,8 +44,6 @@ nav
             font-size: 17px 
             cursor: pointer
 
-            &:hover
-                background: #ccc
 
 ul.drop-menu
     position: absolute
@@ -61,71 +58,18 @@ ul.drop-menu
         &:hover
             background: #b3b3b3
 
-ul.drop-menu li
-    display: none
-li:hover > ul.drop-menu li
-    display: block
 
 #menu
     padding-top: 15px
 
-li:hover > ul.drop-menu.contact 
 
-    perspective: 1000px
-
-    li
-        opacity: 0
-
-        @for $i from 1 through 3
-            &:nth-child(#{$i})
-                animation:
-                    name: contact
-                    duration: 300ms
-                    delay: (300ms * $i) - 300
-                    timing-function: ease-in-out
-                    fill-mode: forwards
-
-
-
-@keyframes one
-    0%
-        background-color: #b3b3b3
-    50%
-        background-color: #aaa
-    100%
-        background-color: #b3b3b3
-
-@keyframes two
-    0%
-        background-color: #aaa
-    50%
-        background-color: #b3b3b3
-    100%
-        background-color: #aaa
-
-@keyframes three 
-    0%
-        background-color: #b3b3b3
-    50%
-        background-color: #aaa
-    100%
-        background-color: #b3b3b3
-
-@keyframes contact
-    0%
-        opacity: 0
-        transform: rotateY(-90deg) translateY(30px)
-    100%
-        opacity: 1
-        transform: rotateY(0deg) translateY(0px)
-
-#one
-    animation: one 5s ease-in-out infinite alternate forwards
-#two
-    animation: two 5s ease-in-out infinite alternate forwards
-#three
-    animation: three 5s ease-in-out infinite alternate forwards
+#content
+    padding: 50px
 
 iframe
     margin: auto
     display: block
+
+a
+    text-decoration: none
+    color: black
