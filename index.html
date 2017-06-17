@@ -1,35 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width, inital-scale=1.0">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
-		<link href="./css/style.css" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="author" content="Pranoy Dutta">
+		<meta name="description" content="Pranoy Dutta's Offical Web Site... Check it out">
+		<meta name="keywords" content="Pranoy, Dutta, tech, programming, in-need-of-a-job">
+		<meta name="twitter:" content="https://twitter.com/Im_a_ninjaaaa">
+		<!-- CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+		<link rel="stylesheet" href="./css/master.css">
+		<!-- Everyone's favorite: JavaScript-->
+		<script src="https://unpkg.com/vue"></script>
+		<script src="./script/main.js"></script>
+		<title>PryDt's Website | Home</title>
 	</head>
 	<body>
-		<div id="top">
-			<h1 id="title" class="center item">{ Pranoy Dutta }</h1>
-			<h2 id="subtitle" class="center item">{ A Human Learning to be a Programmer }</h2>
-			<nav id="menu">
-				<ul>
-					<li id="one" class="item"><a href="https://prydt.github.io">Home</a>
-					</li>
-					<li id="two" class="item">Contact Me
-					</li>
-					<li id="three" class="item">Etc.
-					</li>
-				</ul>
-			</nav>
-		</div>
-		<div id="content">
-
-			<p class="item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis elit magna, ut ultrices dui sodales eu. Cras non tellus vel ex ullamcorper pretium. Duis egestas massa quis risus interdum, at mollis neque efficitur. Curabitur vel laoreet magna. Integer vitae dui vestibulum, sollicitudin orci a, commodo lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam vitae scelerisque neque, quis varius ipsum. Fusce feugiat sapien sit amet velit dapibus tincidunt. Proin fermentum efficitur eros, eget tincidunt mi congue a. Proin malesuada arcu velit, eget hendrerit leo porttitor in.</p>
-
-			<p class="item"><br><br>Etiam malesuada cursus tellus, ullamcorper pretium nibh consequat ut. Curabitur eu neque et arcu ornare consectetur et vitae odio. Donec sit amet egestas est. Integer lacinia quis quam eget hendrerit. Morbi massa magna, pharetra vel ex vulputate, iaculis maximus lorem. In hac habitasse platea dictumst. Praesent malesuada id dolor et volutpat. Sed facilisis risus id suscipit imperdiet. Suspendisse sed lorem at mauris laoreet molestie sed ut lectus. Phasellus imperdiet, augue ut porttitor convallis, metus lacus ornare erat, nec finibus nibh orci quis quam. Suspendisse ullamcorper euismod suscipit.</p>
-
-			<p class="item"><br><br>Morbi eu mattis mi, vitae congue nulla. Praesent suscipit eros pellentesque feugiat ornare. Nulla vitae imperdiet nibh, eu egestas nulla. In at magna purus. Praesent sollicitudin, mauris quis cursus faucibus, risus sem accumsan ipsum, non pharetra nibh est id ex. Quisque quis rutrum ipsum. Nulla pharetra, est nec eleifend cursus, lacus magna aliquam magna, sit amet laoreet mi dolor in massa. Aliquam vel tortor vitae ex dapibus sollicitudin vitae ac nibh. Aliquam facilisis, risus vitae ullamcorper ultrices, ligula nibh luctus nisi, nec viverra lectus lorem quis libero. Fusce sit amet metus blandit, semper diam eget, facilisis massa. Nulla eget elementum libero. Integer tellus ipsum, bibendum non tellus non, consequat mattis elit. Suspendisse venenatis sed magna eu cursus. Cras at neque tempus, semper lacus a, accumsan quam.</p>
-
-			<iframe src="https://discordapp.com/widget?id=236253153769684993&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
-		</div>
+			<header>
+				<a id="title" href="https://github.com/prydt" target="_blank"><h1 v-bind:title="message" class="center"><div class="curly">{</div>PryDt<div class="curly">}</div></h1></a>
+				<p class="center">Programmer; then a Human</p>
+			</header>
 	</body>
 </html>
