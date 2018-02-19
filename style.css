@@ -34,7 +34,7 @@ h1 p {
 #tabs .item a {
     color: #000;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 5vw;
     position: relative;
 }
 
@@ -61,6 +61,10 @@ h1 p {
 
 @media only screen and (max-device-width: 480px) {
     text {
+        width: auto;
+    }
+
+    #tabs {
         width: auto;
     }
 }
