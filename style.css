@@ -1,9 +1,66 @@
 body {
     margin: 0px;
     padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h1 {
+    font-weight: normal;
+    text-align: center;
+
+    padding: 50px;
+}
+
+h1 p {
+    font-size: 20px;
 }
 
 #text {
     margin: 0 auto;
     width: 623px;
+}
+
+#tabs {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+#tabs .item {
+    display: block;
+}
+
+#tabs .item a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: relative;
+}
+
+#tabs .item a:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#tabs .item a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+@media only screen and (max-device-width: 480px) {
+    text {
+        width: 0;
+    }
 }
