@@ -61,6 +61,6 @@ h1 p {
 
 @media only screen and (max-device-width: 480px) {
     text {
-        width: 0;
+        width: auto;
     }
 }
