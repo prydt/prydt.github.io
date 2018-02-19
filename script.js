@@ -1,7 +1,7 @@
 var text = new Blotter.Text("prydt", {
     family: "'Open Sans', sans-serif",
     size: 250,
-    fill: '#202020'
+    fill: '#000'
 })
 
 var material = new Blotter.ChannelSplitMaterial()
