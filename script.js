@@ -39,8 +39,11 @@ function stopLower() {
 }
 
 var e = 360
+
 var turn = setInterval(function() {
     setRotate(--e)
+    setOffset(current)
+    current += 0.0001
 }, 10)
 
 
