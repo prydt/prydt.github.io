@@ -5,11 +5,36 @@ body {
     background: #111111;
 }
 
-.letter:nth-child(1) a { color: #f2777a;}
-.letter:nth-child(2) a { color: #f99157;}
-.letter:nth-child(3) a { color: #fc6;}
-.letter:nth-child(4) a { color: #9acd9a;}
-.letter:nth-child(5) a { color: #6cc;}
+/* animation */
+@keyframes up {
+    0% {
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    50% {
+        -ms-transform: rotate(20deg);
+        -webkit-transform: rotate(20deg);
+        transform: rotate(20deg);
+    }
+    100% {
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+.letter:nth-child(1) a { color: #f2777a; }
+.letter:nth-child(2) a { color: #f99157; }
+.letter:nth-child(3) a { color: #fc6;    }
+.letter:nth-child(4) a { color: #9acd9a; }
+.letter:nth-child(5) a { color: #6cc;    }
+
+.letter:nth-child(1):hover { animation: up 600ms ease-in-out both; }
+.letter:nth-child(2):hover { animation: up 600ms ease-in-out both; }
+.letter:nth-child(3):hover { animation: up 600ms ease-in-out both; }
+.letter:nth-child(4):hover { animation: up 600ms ease-in-out both; }
+.letter:nth-child(5):hover { animation: up 600ms ease-in-out both; }
 
 .letter {
     font-size: 230px;
