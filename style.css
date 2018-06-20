@@ -12,10 +12,15 @@ body {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
     }
-    50% {
+    33% {
         -ms-transform: rotate(20deg);
         -webkit-transform: rotate(20deg);
         transform: rotate(20deg);
+    }
+    66% {
+        -ms-transform: rotate(-20deg);
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg);
     }
     100% {
         -ms-transform: rotate(0deg);
